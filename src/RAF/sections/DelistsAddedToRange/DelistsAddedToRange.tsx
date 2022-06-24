@@ -4767,6 +4767,84 @@ function DelistsAddedToRange(props: any) {
     </Dialog>
   )
 
+  const handleCompleteTask = () => {
+    if (rafpendingActionDetailsCT06) {
+      const completePayload = {
+        reviewDecision: 'Complete',
+        requester: {
+          persona: rafpendingActionDetailsCT06.assigneeRole,
+          details: {
+            emailId: userDetail && userDetail.userdetails[0].user.emailId,
+            userId: userDetail && userDetail.userdetails[0].user.userId,
+            name:
+              userDetail &&
+              userDetail.userdetails[0].user.middleName &&
+              userDetail.userdetails[0].user.middleName !== ''
+                ? `${userDetail.userdetails[0].user.firstName} ${userDetail.userdetails[0].user.middleName} ${userDetail.userdetails[0].user.lastName}`
+                : `${userDetail.userdetails[0].user.firstName} ${userDetail.userdetails[0].user.lastName}`,
+          },
+          roles:
+            userDetail &&
+            userDetail.userdetails[0].roles.map((role: any) => {
+              return {
+                // roleId: role.roleId,
+                roleId: role.roleName,
+              }
+            }),
+          usergroups:
+            userDetail &&
+            userDetail.userdetails[0].usergroups.map((group: any) => {
+              return {
+                groupId: group.groupId,
+                status: group.status,
+              }
+            }),
+        },
+        eventStatus: 'Published',
+        eventId: rafpendingActionDetailsCT06.eventId,
+        milestones: [
+          {
+            action: '',
+            status: rafpendingActionDetailsCT06.status,
+            visibility: rafpendingActionDetailsCT06.visibility,
+            activeTaskId: rafpendingActionDetailsCT06.activeTaskId,
+            milestoneTaskId: rafpendingActionDetailsCT06.milestoneTaskId,
+            taskName: rafpendingActionDetailsCT06.taskName,
+            taskDescription: rafpendingActionDetailsCT06.taskDescription,
+            tradingGroup: rafpendingActionDetailsCT06.tradingGroup,
+            weeksPrior: rafpendingActionDetailsCT06.weeksPrior,
+            dueDate: rafpendingActionDetailsCT06.dueDate,
+            notifyDate: rafpendingActionDetailsCT06.notifyDate,
+            slaDate: rafpendingActionDetailsCT06.slaDate,
+            healthcheckDate: rafpendingActionDetailsCT06.healthcheckDate,
+            assigneeDetails: {
+              emailId: rafpendingActionDetailsCT06.assigneeEmailId,
+              userId: rafpendingActionDetailsCT06.assigneeUserId,
+              name: rafpendingActionDetailsCT06.assigneeName,
+            },
+            // assigneeRole: userAssigned.roles,
+            assigneeRole: rafpendingActionDetailsCT06.assigneeRole,
+          },
+        ],
+        logging: {
+          comments: '',
+          //updated: res.data.attachmentUrl,
+          updated: '',
+        },
+      }
+      putCamundaMileStoneUpdate(
+        rafpendingActionDetailsCT06.eventId,
+        completePayload
+      )
+        .then((res: any) => {
+          console.log(res.data)
+        })
+        .catch((err: any) => {
+          console.log(err.response)
+        })
+    }
+  }
+
   return (
     <>
       <Toast
@@ -5070,7 +5148,11 @@ function DelistsAddedToRange(props: any) {
                 </Button>
               </Grid>
               <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
-                <Button variant="contained" color="primary" disabled>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={handleCompleteTask}
+                >
                   Complete Task
                 </Button>
               </Grid>
