@@ -1,0 +1,54 @@
+/* Typography */
+body {
+  color: var(--warm-grey-700);
+  font-family: MorrisonsAgenda;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  margin: 0 0 var(--baseline) 0;
+  padding: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+blockquote:last-child {
+  margin: 0;
+}
+
+strong {
+  font-family: MorrisonsAgenda;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: MorrisonsAgenda;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}

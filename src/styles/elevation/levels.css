@@ -1,0 +1,12 @@
+:root {
+  --elevation-2-4: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 2px 0 rgba(0, 0, 0, 0.04);
+  --elevation-4-4: 0 4px 4px 0 rgba(0, 0, 0, 0.04), 0 0 4px 0 rgba(0, 0, 0, 0.04);
+  --elevation-8-4: 0 8px 8px 0 rgba(0, 0, 0, 0.04), 0 0 8px 0 rgba(0, 0, 0, 0.04);
+  --elevation-16-4: 0 16px 16px 0 rgba(0, 0, 0, 0.04), 0 0 16px 0 rgba(0, 0, 0, 0.04);
+  --elevation-32-4: 0 32px 32px 0 rgba(0, 0, 0, 0.04), 0 0 32px 0 rgba(0, 0, 0, 0.04);
+  --elevation-2-8: 0 2px 2px 0 rgba(0, 0, 0, 0.08), 0 0 2px 0 rgba(0, 0, 0, 0.08);
+  --elevation-4-8: 0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.08);
+  --elevation-8-8: 0 8px 8px 0 rgba(0, 0, 0, 0.08), 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  --elevation-16-8: 0 16px 16px 0 rgba(0, 0, 0, 0.08), 0 0 16px 0 rgba(0, 0, 0, 0.08);
+  --elevation-32-8: 0 32px 32px 0 rgba(0, 0, 0, 0.08), 0 0 32px 0 rgba(0, 0, 0, 0.08);
+}

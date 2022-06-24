@@ -1,0 +1,52 @@
+.multiselect-demo .p-multiselect {
+    min-width: 15rem;
+}
+
+.multiselect-demo .multiselect-custom .p-multiselect-label:not(.p-placeholder):not(.p-multiselect-items-label) {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.multiselect-demo .multiselect-custom .country-item-value {
+    padding: .25rem .5rem;
+    border-radius: 3px;
+    display: inline-flex;
+    margin-right: .5rem;
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
+}
+
+.multiselect-demo .multiselect-custom .country-item-value img.flag {
+    width: 17px;
+}
+.p-multiselect-panel.p-component.p-connected-overlay-enter-done{
+    z-index: 999999999999!important;
+}
+
+.selectdrop.MuiCheckbox-colorSecondary.Mui-checked{
+    color: #004e37!important;
+}
+.MuiListItem-root.Mui-selected{
+    background-color: #fff!important
+}
+.p-autocomplete-panel.p-component.p-connected-overlay-enter-done{
+    z-index: 999999999999!important;
+}
+.autoCompletePrimeInput .p-inputtext:enabled:focus{
+    box-shadow: none !important;
+    border-color: #004e37!important;
+}
+/* .autoCompletePrimeInput .p-inputtext:enabled:hover{
+    background: #e9ecef!important;
+} */
+/* #e9ecef */
+.p-datatable-scrollable-body-table .p-datatable-tbody tr:hover .autoCompletePrimeInput .p-inputtext:enabled{
+    background: #e9ecef!important;
+} 
+.autoCompletePrimeInput .p-inputtext:enabled:hover{
+    border-color: #004e37!important;
+}
+.autoCompletePrimeInput .p-inputtext.p-component.p-autocomplete-input{
+    padding: 5px!important;
+    border-color: #c4c4c4!important;
+}

@@ -1,0 +1,36 @@
+/* Google Sign In Button Overides */
+.abcRioButton {
+  background: var(--secondary) !important;
+  border-radius: 3rem !important;
+  box-shadow: none !important;
+  padding: 0.5rem !important;
+  outline: none !important;
+}
+
+.abcRioButtonIcon {
+  background: var(--white) !important;
+  border-radius: 100% !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  padding: 7px !important;
+}
+
+.abcRioButtonContents {
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  font-size: var(--font-size-body) !important;
+  letter-spacing: 0 !important;
+  height: 100% !important;
+}
+
+.abcRioButtonContents > span {
+  font-family: MorrisonsAgenda;
+  font-size: var(--font-size-body);
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--black) !important;
+  display: block;
+  line-height: var(--line-height-body) !important;
+}

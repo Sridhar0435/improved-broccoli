@@ -1,0 +1,23 @@
+:root {
+  --primary: var(--british-green);
+  --primary-25: var(--british-green-25);
+  --primary-50: var(--british-green-50);
+  --primary-100: var(--british-green-100);
+  --primary-200: var(--british-green-200);
+  --primary-550: var(--british-green-550);
+  --primary-700: var(--british-green-700);
+  --secondary: var(--fresh-yellow);
+  --secondary-25: var(--fresh-yellow-25);
+  --secondary-50: var(--fresh-yellow-50);
+  --secondary-100: var(--fresh-yellow-100);
+  --secondary-200: var(--fresh-yellow-200);
+  --secondary-550: var(--fresh-yellow-550);
+  --secondary-700: var(--fresh-yellow-700);
+  --tertiary: var(--blueberry);
+  --tertiary-25: var(--blueberry-25);
+  --tertiary-50: var(--blueberry-50);
+  --tertiary-100: var(--blueberry-100);
+  --tertiary-200: var(--blueberry-200);
+  --tertiary-550: var(--blueberry-550);
+  --tertiary-700: var(--blueberry-700);
+}

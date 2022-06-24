@@ -1,0 +1,370 @@
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.MuiGrid-container .flexNav {
+  display: flex;
+  float: left;
+}
+.MuiGrid-container .flexNav button {
+  float: left;
+  margin-right: 15px;
+}
+.MuiGrid-container .navLogo {
+  display: flex;
+  float: left;
+}
+.MuiGrid-container .navLogo div {
+  margin: -10px 0 0 0;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .MuiGrid-container .navLogo {
+    margin-top: 10px;
+  }
+}
+.MuiGrid-container .headeLeabel {
+  margin: auto;
+  margin-left: 0;
+  padding-top: 3px;
+}
+.MuiGrid-container .headeLeabel h6 {
+  font-size: 1.25rem;
+  margin: 0 10px 0 10px;
+  font-family: MorrisonsAgenda;
+  font-weight: bold;
+  color: #fff;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .MuiGrid-container .headeLeabel {
+    display: none;
+  }
+}
+.MuiGrid-container .singInfo {
+  float: right;
+  justify-content: flex-end;
+}
+.MuiGrid-container .singInfo p {
+  text-decoration: none;
+  color: #fff;
+}
+.MuiGrid-container .singInfo p:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.MuiGrid-container .singInfo button:nth-child(1) {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .MuiGrid-container .singInfo button:nth-child(1) {
+    padding-bottom: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .MuiGrid-container .singInfo .MuiAvatar-colorDefault {
+    background-color: #fff;
+    color: #004e37;
+  }
+}
+.MuiGrid-container .rwdLabel {
+  width: 100%;
+  margin-bottom: 1px;
+  background-color: #fcbc00;
+  color: #004e37;
+  margin: 10px 0 0 0;
+  padding: 2px 0 2px 0;
+}
+.MuiGrid-container .rwdLabel h6 {
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .MuiToolbar-gutters {
+    padding: 0 !important;
+  }
+}
+.paddingaccross {
+  margin-bottom: 20px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .paddingaccross {
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1480px !important;
+  }
+  .dashBoardContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.menuItemNav div {
+  justify-content: space-between !important;
+  padding-left: 15px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .MuiPaper-rounded,
+  .MuiContainer-root {
+    padding: 5px !important;
+  }
+  .menuItemNav div {
+    justify-content: space-between !important;
+    padding-top: 22px;
+    padding-left: 15px;
+    padding-bottom: 23px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .headingLabel h6 {
+    font-size: 1.1rem;
+  }
+}
+.backButton {
+  background-color: #e0e1e2;
+  padding: 2px 15px 2px 10px;
+  cursor: pointer;
+  font-size: 16px !important;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  min-width: 80px;
+}
+.backButton svg {
+  position: relative;
+  top: 8px;
+  font-size: 1.2rem;
+  right: -5px;
+}
+.backButton:hover {
+  font-size: 16px !important;
+}
+.createRequest {
+  background-color: #f0f0f0;
+  padding: 20px !important;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .createRequest {
+    padding: 20px !important;
+  }
+  .createRequest .buttonContainer {
+    width: 100% !important;
+    display: table;
+    text-align: center;
+  }
+  .createRequest .buttonContainer button {
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .createRequest textarea {
+    width: 100% !important;
+  }
+}
+.createRequest .createRequestContainer {
+  background-color: #fff;
+  padding: 25px;
+}
+.createRequest .createRequestContainer .additionalData {
+  font-size: 16px;
+  color: #1b6420;
+  display: block;
+}
+.createRequest .MuiInputBase-input {
+  font-family: MorrisonsAgenda;
+  border-radius: 2px;
+  font-weight: 100;
+}
+.createRequest select {
+  height: auto;
+  padding: 4px;
+  border: 1px solid #c2c4c5;
+  color: #000;
+}
+.createRequest div {
+  border-radius: 2px;
+}
+.createRequest .MuiBox-root button {
+  margin: 0;
+}
+.createRequest .MuiBox-root button .MuiTouchRipple-root {
+  font-size: 13px;
+}
+.createRequest .MuiBox-root button:hover {
+  font-size: 13px;
+}
+.createRequest .MuiBox-root-165 {
+  padding-top: 15px;
+}
+.createRequest .browseArea button {
+  padding: 3px 8px 3px 8px;
+  height: auto;
+}
+.createRequest .browseArea button:hover {
+  font-size: 16px;
+}
+.createRequest .browseArea input {
+  height: auto;
+  border: 1px solid #c2c4c5;
+  padding: 2px;
+}
+.createRequest button .addUserGroup {
+  color: #1b6420;
+  font-size: 16px;
+  display: block;
+}
+.createRequest button:disabled .addUserGroup {
+  color: grey;
+  font-size: 16px;
+  display: block;
+}
+.createRequest button:disabled {
+  color: inherit;
+  /* font-size: 16px;
+  display: block; */
+}
+.createRequest .univPadding {
+  padding: 5px;
+}
+.createRequest button .addUserGroup:hover {
+  font-size: 16px;
+  display: block;
+  cursor: pointer;
+}
+.createRequest button:disabled .addUserGroup:hover {
+  font-size: 16px;
+  display: block;
+  cursor: default;
+}
+
+.createRequest textarea {
+  border: 1px solid #c2c4c5;
+}
+.createRequest a {
+  color: #1b6420;
+  font-size: 16px;
+  display: block;
+  font-weight: normal;
+  font-family: MorrisonsAgenda;
+  font-weight: 300;
+}
+.createRequest button[type='reset'] {
+  margin-right: 20px;
+}
+.createRequest button.reSet {
+  margin-right: 20px;
+  color: #004e37;
+  border: 1px solid;
+  border-color: #004e37;
+  background-color: #fff;
+}
+.createRequest .resetReassign {
+  margin-right: 20px;
+}
+.createRequest .addHirerchy {
+  color: #1b6420;
+  font-size: 16px;
+  display: block;
+  font-weight: normal;
+  font-family: MorrisonsAgenda;
+  font-weight: 300;
+}
+.p-datatable-tbody button {
+  color: #299630;
+  font-size: 13px;
+}
+.p-datatable-tbody button:disabled {
+  color: inherit;
+  font-size: 13px;
+}
+.p-datatable-tbody td {
+  font-size: 12px !important;
+  word-break: break-all;
+}
+.manageRequest {
+  background-color: #f0f0f0;
+}
+@media (min-width: 320px) and (max-width: 590px) {
+  .manageRequest .backButtonContainer {
+    padding-left: 0 !important;
+  }
+}
+.rightArrow {
+  font-size: 20px;
+}
+.dashbordHeading {
+  color: #fff;
+  background-color: #004e37;
+  padding: 5px 5px 5px 15px !important;
+}
+.manageUser {
+  flex: 1;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.manageUser .p-datatable-scrollable-body {
+  overflow-y: hidden !important;
+}
+.manageUser .colorSecondary {
+  padding: 16px 16px 0px 16px;
+}
+.manageUser .displayTable {
+  display: table;
+  width: 100%;
+}
+.manageUser .gridSearch {
+  flex-direction: column;
+  width: 70%;
+  float: left;
+}
+.manageUser .createGroup {
+  flex-direction: column;
+  /* width: 28%; */
+  margin-top: 7px;
+  float: left;
+  margin-top: 30px;
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  .manageUser .gridSearch {
+    width: 100%;
+  }
+  .manageUser .createGroup {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    padding-left: 0px;
+  }
+}
+.manageUser .buttonCreateGroup {
+  background-color: #e0e1e2;
+  padding: 6px 15px 10px 10px;
+  color: #1b6420;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.manageUser .p-datatable-scrollable-header-box {
+  margin-right: 0 !important;
+}
+.manageUser .p-datatable-thead > tr > th {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  font-size: 12px !important;
+}
+.manageUser
+  .p-datatable
+  .p-sortable-column.p-highlight
+  .p-sortable-column-icon {
+  color: #fece08;
+}

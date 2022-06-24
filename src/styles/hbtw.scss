@@ -1,0 +1,355 @@
+@import '_varcolor.scss';
+
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  .flexNav {
+    display: flex;
+    float: left;
+    button {
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  .navLogo {
+    display: flex;
+    float: left;
+    div {
+      margin: -10px 0 0 0;
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+      margin-top: 10px;
+    }
+  }
+  .headeLeabel {
+    margin: auto;
+    margin-left: 0;
+    padding-top: 3px;
+    h6 {
+      font-size: 1.25rem;
+      margin: 0 10px 0 10px;
+      font-family: MorrisonsAgenda;
+      font-weight: bold;
+      color: $white;
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .singInfo {
+    float: right;
+    justify-content: flex-end;
+    p {
+      text-decoration: none;
+      color: $white;
+      &:hover {
+        text-decoration: underline;
+        color: $white;
+      }
+    }
+    button:nth-child(1) {
+      padding-left: 0;
+      padding-right: 0;
+      @media (min-width: 320px) and (max-width: 768px) {
+        padding-bottom: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+    .MuiAvatar-colorDefault {
+      @media (min-width: 320px) and (max-width: 768px) {
+        background-color: $white;
+        color: $morrisons-green-font;
+      }
+    }
+  }
+  .rwdLabel {
+    width: 100%;
+    margin-bottom: 1px;
+    background-color: $fresh-yellow;
+    color: $morrisons-green-font;
+    margin: 10px 0 0 0;
+    padding: 2px 0 2px 0;
+    h6 {
+      text-align: center;
+      display: block;
+      font-size: 1rem;
+    }
+  }
+}
+.MuiToolbar-gutters {
+  @media (min-width: 320px) and (max-width: 768px) {
+    padding: 0 !important;
+  }
+}
+.paddingaccross {
+  margin-bottom: 20px;
+  @media (min-width: 320px) and (max-width: 768px) {
+    margin-bottom: 45px;
+  }
+}
+//////////////////////Create request class////////////////////////////
+@media (min-width: 1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1480px !important;
+  }
+  .dashBoardContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.menuItemNav {
+  div {
+    justify-content: space-between !important;
+    padding-left: 15px;
+    @media (min-width: 320px) and (max-width: 768px) {
+      justify-content: space-between !important;
+      padding-top: 22px;
+      padding-left: 15px;
+      padding-bottom: 23px;
+    }
+  }
+}
+.MuiPaper-rounded,
+.MuiContainer-root {
+  @media (min-width: 320px) and (max-width: 768px) {
+    padding: 5px !important;
+  }
+}
+.headingLabel h6 {
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 1.1rem;
+  }
+}
+.backButton {
+  background-color: $warm-grey-100;
+  padding: 2px 15px 2px 10px;
+  cursor: pointer;
+  font-size: 16px !important;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  min-width: 80px;
+  svg {
+    position: relative;
+    top: 8px;
+    font-size: 1.2rem;
+    right: -5px;
+  }
+  &:hover {
+    font-size: 16px !important;
+  }
+}
+.createRequest {
+  background-color: $warm-grey-50;
+  padding: 20px !important;
+  @media (min-width: 320px) and (max-width: 768px) {
+    padding: 20px !important;
+    .buttonContainer {
+      width: 100% !important;
+      display: table;
+      text-align: center;
+      button {
+        margin-right: 10px !important;
+        margin-bottom: 10px !important;
+      }
+    }
+    textarea {
+      width: 100% !important;
+    }
+  }
+  .createRequestContainer {
+    background-color: $white;
+    padding: 25px;
+    .additionalData {
+      font-size: 16px;
+      color: $fresh-green-700;
+      display: block;
+    }
+  }
+  .MuiInputBase-input {
+    font-family: MorrisonsAgenda;
+    border-radius: 2px;
+    font-weight: 100;
+  }
+  select {
+    height: auto;
+    padding: 4px;
+    border: 1px solid $warm-grey-200;
+    color: $black;
+  }
+  div {
+    border-radius: 2px;
+  }
+  .MuiBox-root {
+    button {
+      margin: 0;
+      .MuiTouchRipple-root {
+        font-size: 13px;
+      }
+      &:hover {
+        font-size: 13px;
+      }
+    }
+  }
+  .MuiBox-root-165 {
+    padding-top: 15px;
+  }
+  .browseArea {
+    button {
+      padding: 3px 8px 3px 8px;
+      height: auto;
+    }
+    button:hover {
+      font-size: 16px;
+    }
+    input {
+      height: auto;
+      border: 1px solid $warm-grey-200;
+      padding: 2px;
+    }
+  }
+  button .addUserGroup {
+    color: $fresh-green-700;
+    font-size: 16px;
+    display: block;
+  }
+  .univPadding {
+    padding: 5px;
+  }
+  button .addUserGroup:hover {
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+  }
+  textarea {
+    border: 1px solid $warm-grey-200;
+  }
+  a {
+    color: $fresh-green-700;
+    font-size: 16px;
+    display: block;
+    font-weight: normal;
+    font-family: MorrisonsAgenda;
+    font-weight: 300;
+  }
+  button[type='reset'] {
+    margin-right: 20px;
+  }
+  button.reSet {
+    margin-right: 20px;
+    color: $morrisons-green-font;
+    border: 1px solid;
+    border-color: $morrisons-green-font;
+    background-color: $white;
+  }
+  .resetReassign {
+    margin-right: 20px;
+  }
+  .addHirerchy {
+    color: $fresh-green-700;
+    font-size: 16px;
+    display: block;
+    font-weight: normal;
+    font-family: MorrisonsAgenda;
+    font-weight: 300;
+  }
+}
+.p-datatable-tbody {
+  button {
+    color: $fresh-green-550;
+    font-size: 13px;
+    &:disabled {
+      color: inherit;
+    }
+  }
+  td {
+    font-size: 12px !important;
+    word-break: break-all;
+  }
+}
+///////////usermanage class//////////////
+.manageRequest {
+  background-color: $warm-grey-50;
+  .backButtonContainer {
+    @media (min-width: 320px) and (max-width: 590px) {
+      padding-left: 0 !important;
+    }
+  }
+}
+.rightArrow {
+  font-size: 20px;
+}
+.dashbordHeading {
+  color: $white;
+  background-color: $morrisons-green-font;
+  padding: 5px 5px 5px 15px !important;
+}
+.manageUser {
+  flex: 1;
+  color: $white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .p-datatable-scrollable-body {
+    overflow-y: hidden !important;
+  }
+  .colorSecondary {
+    padding: 16px 16px 0px 16px;
+  }
+  .displayTable {
+    display: table;
+    width: 100%;
+  }
+  .gridSearch {
+    flex-direction: column;
+    width: 70%;
+    float: left;
+  }
+  .createGroup {
+    flex-direction: column;
+    // width: 28%;
+    margin-top: 7px;
+    float: left;
+    margin-top: 30px;
+  }
+  @media (min-width: 320px) and (max-width: 450px) {
+    .gridSearch {
+      width: 100%;
+    }
+    .createGroup {
+      width: 100%;
+      margin-top: 20px;
+      display: block;
+      padding-left: 0px;
+    }
+  }
+  .buttonCreateGroup {
+    background-color: $warm-grey-100;
+    padding: 6px 15px 10px 10px;
+    color: $fresh-green-700;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+  .p-datatable-scrollable-header-box {
+    margin-right: 0 !important;
+  }
+  .p-datatable-thead > tr > th {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    font-size: 12px !important;
+  }
+  .p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon {
+    color: $morrisons-yellow;
+  }
+}
+.sourav {
+  padding: 0;
+}

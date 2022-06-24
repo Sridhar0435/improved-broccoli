@@ -1,0 +1,15 @@
+dev:
+  s3: mdev.hcw.commercial.hcw.mgrkbglzlm
+  cdn: E3B8KTERJEDXQX
+  cdn-url: https://dfydw7pofaamx.cloudfront.net
+  mymorri-url: https://hcwwebapp.dev.testapps.mymorri.com
+sit:
+  s3: msit.commercial.hcw.efldcvtxpd
+  cdn: ET6QHNE55B22Y
+  cdn-url: https://dp673cy4kozi7.cloudfront.net
+  mymorri-url: https://hcwwebapp.sit.testapps.mymorri.com
+pre:
+  s3: mpre.commercial.hcw.ddcmbcjcql
+  cdn: E36N0XNSMPS2JV
+  cdn-url: https://d39uwv4i90vk6x.cloudfront.net
+  mymorri-url: https://hcwwebapp.pre.testapps.mymorri.com

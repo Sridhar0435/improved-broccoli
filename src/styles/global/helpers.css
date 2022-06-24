@@ -1,0 +1,94 @@
+/* Lock Body */
+.lock {
+  overflow: hidden;
+}
+
+.lock body {
+  overflow: hidden;
+}
+
+/* Rotate */
+.rotate > * {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin { 
+  100% { 
+    transform:rotate(360deg); 
+  } 
+}
+
+/* Action Float */
+.actionFloat {
+  bottom: 1.25rem;
+  position: fixed;
+  right: 1rem;
+  z-index: 2;
+}
+/* .datatable-style-demo .row-accessories {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+} */
+.row-accessories {
+  background-color: #f2f2f2 !important;
+}
+.cursor{
+  /* cursor: not-allowed; */
+}
+.sridhar{
+  /* display: none; */
+  /* visibility: hidden; */
+  background: red;
+  color: red;
+}
+.sridhar::before{
+  content:"⭯";
+  font-weight: 700;
+    font-size: 17px;
+    position: relative;
+    left: 17px;
+    top: 3px;
+    z-index: 99999;
+}
+ .row-accessories .pi-check::before{
+  content:"⭯" !important;
+  color: #fff;
+  /* border-color: silver!important;
+    background: silver!important; */
+}
+.row-accessories .p-selection-column{
+  /* visibility: hidden; */
+  /* display: none; */
+}
+.row-accessories .p-selection-column::before{
+  content:"⭯" !important;
+  color: #004e37;
+  font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    padding: 0px 4px;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+}
+.row-accessories .p-selection-column:hover:after{
+  content: "Reactivate Task";
+  white-space: nowrap;
+  background: #ffff97;
+  border: 1px solid #b5b589;
+  padding: 0px 12px;
+  border-radius: 3px;
+  position: absolute;
+  left: 43px;
+  /* top: 2px; */
+}
+
+.row-accessories .p-checkbox.p-component{
+  display: none;
+}
+.row-accessories.p-highlight .p-checkbox.p-component{
+  display: none;
+}
+.row-accessories.p-highlight .p-checkbox-box.p-component[aria-checked="true"]{
+  display: none;
+}
+
